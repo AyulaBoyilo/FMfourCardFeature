@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins";
+  font-size: 15px;
+  background-color: #fafafa;
+  padding: 0 25px;
+}
+
+p {
+  margin-top: 10px;
+  color: #a3a5ae;
+  line-height: 1.5;
+}
+
+.intro {
+  margin: 70px 0;
+  padding: 0 10px;
+  text-align: center;
+}
+.intro h1 {
+  font-size: 24px;
+  font-weight: 200;
+}
+.intro span {
+  display: block;
+  font-weight: 600;
+}
+.intro p {
+  max-width: 335px;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.card {
+  max-width: 335px;
+  margin: auto;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 20px rgba(1, 1, 1, 0.1);
+  position: relative;
+}
+.card img {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+}
+.card p {
+  margin-bottom: 110px;
+  font-size: 14px;
+}
+
+.column:first-child .card {
+  border-top: 5px solid #45d3d3;
+}
+
+.column:nth-child(2) .card:first-child {
+  border-top: 5px solid #ea5353;
+}
+.column:nth-child(2) .card:last-child {
+  border-top: 5px solid #fcaf4a;
+}
+
+.column:last-child .card {
+  border-top: 5px solid #549ef2;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 50px 0;
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+@media (min-width: 768px) and (max-width: 1399px) {
+  .intro h1 {
+    font-size: 36px;
+    line-height: 1.4;
+  }
+  .intro p {
+    max-width: 500px;
+    font-size: 16px;
+  }
+
+  .cards {
+    position: relative;
+    max-width: 710px;
+    margin: auto;
+  }
+  .cards .column .card {
+    margin: 0 10px 20px 10px;
+  }
+  .cards .column:nth-child(2) {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+@media (min-width: 1400px) {
+  .intro h1 {
+    font-size: 40px;
+    line-height: 1.4;
+  }
+  .intro p {
+    max-width: 600px;
+    font-size: 17px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards {
+    display: flex;
+    align-items: center;
+  }
+  .cards .column {
+    display: flex;
+    margin-right: 25px;
+  }
+  .cards .column:nth-child(2) {
+    flex-direction: column;
+  }
+  .cards .column:last-child {
+    margin-right: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
